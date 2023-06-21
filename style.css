@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 95%;
+    height: 95vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+/*info section*/
+.info{
+    width: 26%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    border-radius: 2rem;
+}
+
+.info hr{
+    width: 90%;
+    margin: auto;
+}
+
+.description,
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.photo img{
+    object-fit: cover;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.socials .so-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+
+.so-cont i{
+    font-size: 2rem;
+    margin-right: 1em;
+    width: 20px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 1.7rem;
+}
+
+
+/*content section*/
+.content{
+    width: 72%;
+    height: 100%;
+    background-color: rgb(59, 58, 58);
+    border-radius: 2rem;
+
+}
+
+nav{
+    background-color: rgb(94, 93, 93);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 2rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+li{
+    font-size: 1.2rem;
+    padding: .7em 1em;
+
+}
+
+li:first-child{
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+li:last-child{
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li.active{
+    background-color: white;
+    color: black;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+}
+
+.pages .page{
+    background-color: beige;
+    color: black;
+    border-radius: 1.5rem;
+    padding: 2em;
+    display: none;
+    margin-top: 100px;
+}
+
+.pages .page.active{
+    display: block;
+}
