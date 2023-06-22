@@ -53,13 +53,19 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 60%;
+    width: 75%;
+}
+
+.so-cont .text{
+    width: 70%;
 }
 
 .so-cont i{
     font-size: 2rem;
     margin-right: 1em;
-    width: 20px;
+    width: 35px;
+    display: grid;
+    place-content: center;
 }
 
 .icons{
@@ -113,6 +119,7 @@ li:last-child{
 li a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 li.active{
